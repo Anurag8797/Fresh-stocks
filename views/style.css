@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+  --main-bg-color: #2874f0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header{
+    background: var(--main-bg-color); 
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+    top: 0%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn{
+    padding: 5px 10px;
+    color: white;
+    background: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer; 
+}
+
+#btn:hover {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-color: #f1f1c0;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.05em);
+}
+
+
+#btn{
+    padding: 12px 30px;
+    margin:0px 20vw;
+    color: white;
+    background: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.container {
+    min-width: 20rem;
+    width: 56vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stocks-list {
+    border: 2px solid rgb(171, 171, 171);
+    border-radius: 7px;
+    margin: auto; 
+    width: 55vw;
+    height: 76vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.item{
+    border-bottom: 2px solid rgb(215, 215, 215);
+    border-radius: 7px;
+    margin-bottom: 15px;
+    margin-left: 6vw;
+    height: 38rem;
+    width: 43vw;
+}
+
+.stockImg{
+    display: flex;
+    margin-left: 10vw;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.stockTittle{
+    padding: 10px;
+    font-size: 25px;
+    color: #0a1930;
+    display: flex;
+    margin: 10px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.stockPrices {
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.stockRates {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: left;
+    font-weight:bold;
+}
+
+.addToCart{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 18vw;
+    margin-bottom: 15px;
+    color: white;
+    background: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-color: #f1f1c0;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.05em);
+    cursor: pointer;
+}
+
+.attribute {
+    display: flex;
+    color: #351616;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 8vh;
+    background-color: var(--main-bg-color); 
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
